@@ -1,25 +1,33 @@
-import logo from "./logo.svg";
+import {BrowserRouter as Router, Route} from "react-router-dom";
+
 import "./App.css";
+import Search from "./components/Searchpage";
+import Saved from "./components/Savedpage"
+// router for search, saved page etc import switch as well 
+//make static file for data- fake google books. json 
+//make wireframe or refrence a wireframe components-consider changing pages to nav,jumbo, etc 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>App</div>
+    // <Router>
+    //   <div>
+    //     <Nav />
+    //     <Switch>
+    //       <Route exact path="/">
+    //         <Search />
+    //       </Route>
+    //       <Route exact path="/saved">
+    //         <Saved />
+    //       </Route>
+    //       <Route>
+    //         <NoMatch />
+    //       </Route>
+    //     </Switch>
+    //   </div>
+    // </Router>
   );
 }
+
 
 export default App;

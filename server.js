@@ -1,7 +1,13 @@
 const express = require("express");
 const path = require("path");
+const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();
+
+mongoose.connect('mongod://localhost/google_books_db',{
+  useNewUrlParser: true,
+  useUnifiedTopology:true,
+})
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
