@@ -3,7 +3,8 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import "./App.css";
 import Search from "./components/Searchpage";
 import Saved from "./components/Savedpage";
-import NoMatch from "./components/NoMatch"
+import NoMatch from "./components/NoMatch";
+import Navbar from "./components/Navbar"
 // router for search, saved page etc import switch as well 
 //make static file for data- fake google books. json 
 //make wireframe or refrence a wireframe components-consider changing pages to nav,jumbo, etc 
@@ -13,7 +14,7 @@ function App() {
     
     <Router>
       <div>
-        {/* <Nav /> */}
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Search />
@@ -26,7 +27,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
+     </Router> 
   );
 }
 

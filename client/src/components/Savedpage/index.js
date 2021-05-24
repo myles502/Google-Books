@@ -1,9 +1,15 @@
-import React from "react"
+import React from "react";
+import Hero from "../Hero";
+import Booklist from "../BookList";
 
-function Savepage(){
-return(
-    <div>Save Page</div>
-)
+function Savedpage() {
+  return (
+    <>
+    <Hero />
+   
+    <Booklist />
+  </>
+  )
 }
 
-export default Savepage;
+export default Savedpage;
